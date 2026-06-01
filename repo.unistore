@@ -23,8 +23,21 @@
           "type": "3dsx",
           "url": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.1/ds.3dsx",
           "filename": "mei-github.3dsx",
-          "path": "sd:/3ds/github.3dsx",
+          "path": "sd:/3ds/mei-github.3dsx",
           "description": "Executable for the Homebrew Launcher"
+        },
+        {
+          "type": "cia",
+          "url": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/ds.cia",
+          "filename": "unstable-mei-github.cia",
+          "description": "[UNSTABLE] Installable CIA for the 3DS Home Screen"
+        },
+        {
+          "type": "3dsx",
+          "url": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/ds.3dsx",
+          "filename": "unstable-mei-github.3dsx",
+          "path": "sd:/3ds/unstable-mei-github.3dsx",
+          "description": "[UNSTABLE] Executable for the Homebrew Launcher"
         }
       ]
     }
