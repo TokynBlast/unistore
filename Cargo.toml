@@ -1,5 +1,5 @@
 [package]
-name = "3DS GitHub"
+name = "github viewer"
 version = "0.0.1"
 edition = "2024"
 
