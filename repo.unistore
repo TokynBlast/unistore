@@ -3,41 +3,72 @@
     "title": "Mei's Programming Tools 'N' Stuff",
     "author": "MeiMei",
     "description": "A bunch of awesome programming tools!",
-    "version": 1
+    "file": "mei-tools.unistore",
+    "url": "https://raw.githubusercontent.com/TokynBlast/unistore/main/repo.unistore",
+    "version": 3,
+    "revision": 1
   },
-  "apps": [
+  "storeContent": [
     {
-      "title": "GitHub Viewer",
-      "author": "MeiMei",
-      "description": "View and interact with GitHub, straight from your 3DS!",
-      "category": "Utility",
-      "version": "0.0.0",
-      "assets": [
+      "info": {
+        "title": "GitHub Viewer",
+        "author": "MeiMei",
+        "description": "View and interact with GitHub, straight from your 3DS!",
+        "category": [
+          "Utility"
+        ],
+        "version": "0.0.0"
+      },
+      "script": [
         {
-          "type": "cia",
-          "url": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.1/ds.cia",
-          "filename": "mei-github.cia",
-          "description": "Installable CIA for the 3DS Home Screen"
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.1/github_viewer.cia",
+          "output": "sdmc:/mei-github.cia",
+          "message": "Downloading CIA..."
         },
         {
-          "type": "3dsx",
-          "url": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.1/ds.3dsx",
-          "filename": "mei-github.3dsx",
-          "path": "sd:/3ds/mei-github.3dsx",
-          "description": "Executable for the Homebrew Launcher"
+          "type": "installCia",
+          "file": "/mei-github.cia",
+          "message": "Installing CIA..."
         },
         {
-          "type": "cia",
-          "url": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/ds.cia",
-          "filename": "unstable-mei-github.cia",
-          "description": "[UNSTABLE] Installable CIA for the 3DS Home Screen"
+          "type": "deleteFile",
+          "file": "sdmc:/mei-github.cia",
+          "message": "Cleaning up setup files..."
+        }
+      ],
+      "script_3dsx": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.1/github_viewer.3dsx",
+          "output": "sdmc:/3ds/mei-github.3dsx",
+          "message": "Downloading 3DSX..."
+        }
+      ],
+      "script_unstable_cia": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/github_viewer.cia",
+          "output": "sdmc:/unstable-mei-github.cia",
+          "message": "[UNSTABLE] Downloading CIA..."
         },
         {
-          "type": "3dsx",
-          "url": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/ds.3dsx",
-          "filename": "unstable-mei-github.3dsx",
-          "path": "sd:/3ds/unstable-mei-github.3dsx",
-          "description": "[UNSTABLE] Executable for the Homebrew Launcher"
+          "type": "installCia",
+          "file": "/unstable-mei-github.cia",
+          "message": "[UNSTABLE] Installing CIA..."
+        },
+        {
+          "type": "deleteFile",
+          "file": "sdmc:/unstable-mei-github.cia",
+          "message": "Cleaning up unstable payload..."
+        }
+      ],
+      "script_unstable_3dsx": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/github_viewer.3dsx",
+          "output": "sdmc:/3ds/unstable-mei-github.3dsx",
+          "message": "[UNSTABLE] Downloading 3DSX..."
         }
       ]
     }
