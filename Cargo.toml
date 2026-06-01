@@ -1,0 +1,13 @@
+[package]
+name = "3DS GitHub"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+ctru-rs = { git = "https://github.com/rust3ds/ctru-rs" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
