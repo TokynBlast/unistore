@@ -6,7 +6,7 @@
     "file": "meimei-prog-tools.unistore",
     "url": "https://raw.githubusercontent.com/TokynBlast/unistore/main/meimei-prog-tools.unistore.unistore",
     "version": 3,
-    "revision": 1
+    "revision": 2
   },
   "storeContent": [
     {
@@ -17,7 +17,7 @@
         "category": [
           "Utility"
         ],
-        "version": "0.0.0"
+        "version": "unstable_manual_build"
       },
       "script": [
         {
@@ -48,7 +48,7 @@
       "script_unstable_cia": [
         {
           "type": "downloadFile",
-          "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/github_viewer.cia",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_manual_build/github_viewer.cia",
           "output": "sdmc:/unstable-mei-github.cia",
           "message": "[UNSTABLE] Downloading CIA..."
         },
@@ -66,7 +66,7 @@
       "script_unstable_3dsx": [
         {
           "type": "downloadFile",
-          "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_v0.0.1/github_viewer.3dsx",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_manual_build/github_viewer.3dsx",
           "output": "sdmc:/3ds/unstable-mei-github.3dsx",
           "message": "[UNSTABLE] Downloading 3DSX..."
         }
