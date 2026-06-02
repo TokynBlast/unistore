@@ -6,7 +6,7 @@
     "file": "meimei-prog-tools.unistore",
     "url": "https://raw.githubusercontent.com/TokynBlast/unistore/main/meimei-prog-tools.unistore",
     "version": 3,
-    "revision": 10
+    "revision": 11
   },
   "storeContent": [
     {
@@ -19,6 +19,8 @@
         ],
         "version": "v0.0.7"
       },
+      
+      "comment": "--- STABLE CHANNEL ---",
       "script": [
         {
           "type": "downloadFile",
@@ -45,6 +47,8 @@
           "message": "Downloading 3DSX..."
         }
       ],
+
+      "comment_unstable": "--- UNSTABLE CHANNEL ---",
       "script_unstable_cia": [
         {
           "type": "downloadFile",
@@ -69,6 +73,62 @@
           "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_manual_build/github_viewer.3dsx",
           "output": "sdmc:/3ds/unstable-mei-github.3dsx",
           "message": "[UNSTABLE] Downloading 3DSX..."
+        }
+      ],
+
+      "comment_nightly": "--- NIGHTLY CHANNEL ---",
+      "script_nightly_cia": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/nightly_build/github_viewer.cia",
+          "output": "sdmc:/nightly-mei-github.cia",
+          "message": "[NIGHTLY] Downloading CIA..."
+        },
+        {
+          "type": "installCia",
+          "file": "/nightly-mei-github.cia",
+          "message": "[NIGHTLY] Installing CIA..."
+        },
+        {
+          "type": "deleteFile",
+          "file": "sdmc:/nightly-mei-github.cia",
+          "message": "Cleaning up nightly payload..."
+        }
+      ],
+      "script_nightly_3dsx": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/nightly_build/github_viewer.3dsx",
+          "output": "sdmc:/3ds/nightly-mei-github.3dsx",
+          "message": "[NIGHTLY] Downloading 3DSX..."
+        }
+      ],
+
+      "comment_test": "--- TEST CHANNEL ---",
+      "script_test_cia": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/test_build/github_viewer.cia",
+          "output": "sdmc:/test-mei-github.cia",
+          "message": "[TEST] Downloading CIA..."
+        },
+        {
+          "type": "installCia",
+          "file": "/test-mei-github.cia",
+          "message": "[TEST] Installing CIA..."
+        },
+        {
+          "type": "deleteFile",
+          "file": "sdmc:/test-mei-github.cia",
+          "message": "Cleaning up test payload..."
+        }
+      ],
+      "script_test_3dsx": [
+        {
+          "type": "downloadFile",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/test_build/github_viewer.3dsx",
+          "output": "sdmc:/3ds/test-mei-github.3dsx",
+          "message": "[TEST] Downloading 3DSX..."
         }
       ]
     }
