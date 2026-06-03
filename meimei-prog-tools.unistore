@@ -6,7 +6,7 @@
     "file": "meimei-prog-tools.unistore",
     "url": "https://tokynblast.github.io/unistore/meimei-prog-tools.unistore",
     "version": 3,
-    "revision": 17
+    "revision": 18
   },
   "storeContent": [
     {
@@ -17,12 +17,12 @@
         "category": [
           "Utility"
         ],
-        "version": "v0.0.13"
+        "version": "v0.0.14"
       },
       "stable_cia": [
         {
           "type": "downloadFile",
-          "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.13/3ds_github.cia",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.14/3ds_github.cia",
           "output": "sdmc:/mei-github.cia",
           "message": "Downloading CIA..."
         },
@@ -40,7 +40,7 @@
       "stable_3dsx": [
         {
           "type": "downloadFile",
-          "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.13/3ds_github.3dsx",
+          "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.14/3ds_github.3dsx",
           "output": "sdmc:/3ds/mei-github.3dsx",
           "message": "Downloading 3DSX..."
         }
