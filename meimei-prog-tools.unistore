@@ -6,7 +6,7 @@
     "file": "meimei-prog-tools.unistore",
     "url": "https://tokynblast.github.io/unistore/meimei-prog-tools.unistore",
     "version": 3,
-    "revision": 18
+    "revision": 19
   },
   "storeContent": [
     {
@@ -23,17 +23,17 @@
         {
           "type": "downloadFile",
           "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.14/3ds_github.cia",
-          "output": "sdmc:/mei-github.cia",
+          "output": "sdmc:/meimei-dev/3ds_github/3ds_github.cia",
           "message": "Downloading CIA..."
         },
         {
           "type": "installCia",
-          "file": "/mei-github.cia",
+          "file": "sdmc:/meimei-dev/3ds_github/3ds_github.cia",
           "message": "Installing CIA..."
         },
         {
           "type": "deleteFile",
-          "file": "sdmc:/mei-github.cia",
+          "file": "sdmc:/meimei-dev/3ds_github/3ds_github.cia",
           "message": "Cleaning up setup files..."
         }
       ],
@@ -41,7 +41,7 @@
         {
           "type": "downloadFile",
           "file": "https://github.com/TokynBlast/3ds-github/releases/download/v0.0.14/3ds_github.3dsx",
-          "output": "sdmc:/3ds/mei-github.3dsx",
+          "output": "sdmc:/meimei-dev/3ds_github/3ds_github.3dsx",
           "message": "Downloading 3DSX..."
         }
       ],
@@ -49,17 +49,17 @@
         {
           "type": "downloadFile",
           "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_build/github_viewer.cia",
-          "output": "sdmc:/unstable-mei-github.cia",
+          "output": "sdmc:/meimei-dev/3ds_github/github_viewer.cia",
           "message": "[UNSTABLE] Downloading CIA..."
         },
         {
           "type": "installCia",
-          "file": "/unstable-mei-github.cia",
+          "file": "sdmc:/meimei-dev/3ds_github/github_viewer.cia",
           "message": "[UNSTABLE] Installing CIA..."
         },
         {
           "type": "deleteFile",
-          "file": "sdmc:/unstable-mei-github.cia",
+          "file": "sdmc:/meimei-dev/3ds_github/github_viewer.cia",
           "message": "Cleaning up unstable payload..."
         }
       ],
@@ -67,7 +67,7 @@
         {
           "type": "downloadFile",
           "file": "https://github.com/TokynBlast/3ds-github/releases/download/unstable_build/github_viewer.3dsx",
-          "output": "sdmc:/3ds/unstable-mei-github.3dsx",
+          "output": "sdmc:/meimei-dev/3ds_github/github_viewer.3dsx",
           "message": "[UNSTABLE] Downloading 3DSX..."
         }
       ]
